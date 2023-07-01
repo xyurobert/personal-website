@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from '../styles/skeleton.scss';
+import styles from '../styles/style.scss';
 import Sidebar from '../components/Sidebar';
 
 function Reading() {

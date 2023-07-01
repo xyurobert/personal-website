@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/skeleton.scss';
+import styles from '../styles/style.scss';
 import Sidebar from '../components/Sidebar';
 
 function Music() {

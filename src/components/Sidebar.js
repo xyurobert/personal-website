@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import styles from '../styles/skeleton.scss';
+import styles from '../styles/style.scss';
 import links from '../styles/links.scss'
 import { FaLinkedin, FaGithub, FaGoodreads } from "react-icons/fa";
 import { SiGmail } from "react-icons/si"
