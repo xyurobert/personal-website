@@ -16,7 +16,6 @@ function App() {
           <Route exact path="/projects" element={<Projects/>} />
           <Route exact path="/reading" element = {<Reading/>} />
           <Route exact path="/music" element = {<Music/>} />
-          <Route path="/*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
     </HashRouter>

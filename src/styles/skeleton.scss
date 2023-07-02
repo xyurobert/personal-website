@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Nunito:wght@500&display=swap');
 
 body {
   background: #f0ece2;
@@ -7,7 +7,7 @@ body {
 .sidebar {
   flex-direction: column;
   text-align: left;
-  margin-left: 20vw;
+  margin-left: 25vw;
 }
 
 .socials {
@@ -20,7 +20,7 @@ body {
 .links {
   display: flex;
   flex-direction: column;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .container {
@@ -29,13 +29,61 @@ body {
 
 .info {
   text-align: left;
+  font-size: 17px;
   margin-left: 6vw;
-  font-family: 'Nunito', sans-serif;
-  margin-right: 20vw;
+  margin-top: 2vw;
+  margin-right: 25vw;
+  overflow-wrap: normal;
+  overflow: hidden;
+  font-family: 'DM Sans', sans-serif;
   color: rgb(55,55,65);
 }
 
 .name {
   white-space: nowrap;
-  font-family: 'Nunito', sans-serif;
+  font-size: 37px;
+  color: rgb(55,55,64);
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+}
+
+@media (max-width: 800px) {
+    .info {
+    margin-right: 6vw;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .links {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .name {
+    text-align: center;
+  }
+  
+  .socials {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1px;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+
+  .info {
+    margin-right: 6vw;
+    margin-top: 0;
+  }
 }

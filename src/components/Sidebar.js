@@ -15,19 +15,21 @@ function Sidebar() {
 
   return (
     <div className='sidebar'>
-      <h1 className='name'>Robert Xu</h1>
+      <h1 className='name'>
+        <a className='name' href="/">Robert Xu</a>
+      </h1>
       <div className='links'>
-        <h4 style={{ margin: '5px 0' }}>
+        <h4 className='link' style={{ margin: '5px 0' }}>
           <a className={isAbout ? 'current' : ''} href="/">about</a>
         </h4>
         <h4 style={{ margin: '5px 0' }}>
-          <a className={isProject ? 'current' : ''} href="/projects">projects</a>
+          <a className={isProject ? 'current' : ''} href="/#/projects">projects</a>
         </h4>
         <h4 style={{ margin: '5px 0' }}>
-          <a className={isReading ? 'current' : ''} href="/reading">reading</a>
+          <a className={isReading ? 'current' : ''} href="/#/reading">reading</a>
         </h4>
         <h4 style={{ margin: '5px 0' }}>
-          <a className={isMusic ? 'current' : ''} href="/music">music</a>
+          <a className={isMusic ? 'current' : ''} href="/#/music">music</a>
         </h4>
       </div>
 
