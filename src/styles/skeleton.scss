@@ -23,13 +23,13 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 
-.container {
+.page-container {
   display: flex;
 }
 
-.info {
+.info-container {
   text-align: left;
-  font-size: 17px;
+  font-size: 16.5px;
   margin-left: 6vw;
   margin-top: 2vw;
   margin-right: 25vw;
@@ -37,6 +37,19 @@ body {
   overflow: hidden;
   font-family: 'DM Sans', sans-serif;
   color: rgb(55,55,65);
+}
+
+.project-container {
+  margin-top: 5vw;
+}
+
+.books-container {
+  margin-top: 5vw;
+}
+
+.music-container {
+  margin-top: 5vw;
+  margin-bottom: 10vw;
 }
 
 .name {
@@ -47,10 +60,9 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 
-@media (max-width: 800px) {
-    .info {
-    margin-right: 6vw;
-    margin-top: 0;
+@media (max-width: 1100px) {
+  .info {
+    margin-right: 15vw;
   }
 }
 
