@@ -69,8 +69,8 @@ function About() {
             </p>
             <p>
               Currently, I'm a SWE intern at&nbsp;
-              <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.haylontech.com/'>Haylon Technologies <FaArrowRight className='arrow'/>&nbsp;&nbsp;</a> 
-              working backend and&nbsp;
+              <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.haylontech.com/'>Haylon Technologies <FaArrowRight className='arrow'/></a> 
+              &nbsp;&nbsp;working backend and&nbsp;
               <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.ticker.fund/'>Ticker Markets <FaArrowRight className='arrow'/></a> 
               &nbsp;&nbsp;working frontend. Previously, I was a research intern at UMD, studying the applications of NLP and reinforcement learning.
             </p>
