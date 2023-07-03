@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   text-align: left;
   margin-left: 25vw;
+  position: fixed
 }
 
 .socials {
@@ -30,7 +31,7 @@ body {
 .info-container {
   text-align: left;
   font-size: 16.5px;
-  margin-left: 6vw;
+  margin-left: 44vw;
   margin-top: 2vw;
   margin-right: 25vw;
   overflow-wrap: normal;
@@ -39,12 +40,43 @@ body {
   color: rgb(55,55,65);
 }
 
-.project-container {
+.link {
+  text-decoration: none;
+}
+
+.projects-container {
   margin-top: 5vw;
+}
+
+.project-container {
+  margin-top: 15px;
+  border: 1px solid rgb(55,55,65);
+  border-radius: 10px;
+}
+
+.project-title {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.project-description {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.project-skills {
+  margin-left: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
 }
 
 .books-container {
   margin-top: 5vw;
+}
+
+li {
+  margin-top: 3px;
 }
 
 .music-container {
@@ -61,16 +93,23 @@ body {
 }
 
 @media (max-width: 1100px) {
-  .info {
+  .info-container {
     margin-right: 15vw;
   }
 }
 
 @media (max-width: 900px) {
   .sidebar {
-    justify-content: center;
-    margin-left: 0;
-    margin-right: 0;
+    flex-direction: column;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f0ece2;
+    border-bottom: 2px solid rgb(55,55,65);
   }
 
   .links {
@@ -81,6 +120,7 @@ body {
 
   .name {
     text-align: center;
+    font-size: 27px;
   }
   
   .socials {
@@ -90,12 +130,13 @@ body {
     margin-top: 1px;
   }
   
-  .container {
+  .page-container {
     flex-direction: column;
   }
 
-  .info {
-    margin-right: 6vw;
-    margin-top: 0;
+  .info-container {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 27vw;
   }
 }

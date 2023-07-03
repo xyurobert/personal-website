@@ -1,24 +1,76 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from '../styles/skeleton.scss';
 import Sidebar from '../components/Sidebar'
 import { FaArrowRight } from "react-icons/fa";
 
 function About() {
+  const aboutRef = useRef(null);
+  const booksRef = useRef(null);
+  const projectsRef = useRef(null);
+  const musicRef = useRef(null);
+
+  const handleScrollToAbout = () => {
+    let yOffset = -20;
+    if(window.innerWidth < 900){
+      yOffset = -160;
+    }
+    console.log(yOffset)
+    const element = aboutRef.current;
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    console.log(y)
+    window.scrollTo({ top: y, behavior: 'smooth' });  };
+
+  const handleScrollToProjects = () => {
+    let yOffset = -20;
+    if(window.innerWidth < 900){
+      yOffset = -160;
+    }
+    const element = projectsRef.current;
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  
+    window.scrollTo({ top: y, behavior: 'smooth' });  };
+
+  const handleScrollToBooks = () => {
+    let yOffset = -20;
+    if(window.innerWidth < 900){
+      yOffset = -160;
+    }
+    console.log(yOffset)
+    const element = booksRef.current;
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  
+    window.scrollTo({ top: y, behavior: 'smooth' });  };
+
+  const handleScrollToMusic = () => {
+    let yOffset = -20;
+    if(window.innerWidth < 900){
+      yOffset = -160;
+    }
+    const element = musicRef.current;
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  
+    window.scrollTo({ top: y, behavior: 'smooth' });  };
+
   return (
     <div className="page-container">
-      <Sidebar />
+      <Sidebar 
+        handleScrollToAbout={handleScrollToAbout}
+        handleScrollToProjects={handleScrollToProjects}
+        handleScrollToBooks={handleScrollToBooks}
+        handleScrollToMusic={handleScrollToMusic}
+      />
       <div className='info-container'>
 
-        <div className='about-container'>
-          <h2 className='hi'>Hi!</h2>
+        <div className='about-container' ref={aboutRef}>
+          <h2 className='hi'>Hello!</h2>
           <div className='about'>
             <p>
               I'm a CS + Math rising sophomore @ University of Maryland, College Park. I love building things and expanding my knowledge wherever I go. 
             </p>
             <p>
               Currently, I'm a SWE intern at&nbsp;
-              <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.haylontech.com/'>Haylon Technologies <FaArrowRight className='arrow'/></a> 
-              &nbsp;&nbsp;working backend and&nbsp;
+              <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.haylontech.com/'>Haylon Technologies <FaArrowRight className='arrow'/>&nbsp;&nbsp;</a> 
+              working backend and&nbsp;
               <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.ticker.fund/'>Ticker Markets <FaArrowRight className='arrow'/></a> 
               &nbsp;&nbsp;working frontend. Previously, I was a research intern at UMD, studying the applications of NLP and reinforcement learning.
             </p>
@@ -28,33 +80,65 @@ function About() {
           </div>
         </div>
 
-        <div className='project-container'>
+        <div className='projects-container' ref={projectsRef}>
           <h2>Projects</h2>
           <div className='projects'>
-            <h4>
-              <a className='link' target="_blank" rel="noopener noreferrer" href="https://github.com/xyurobert/moco-hacks">
-                TweetAway <FaArrowRight className='arrow'/>
-              </a>
-            </h4>
-            <h4>
-              <a className='link' target="_blank" rel="noopener noreferrer" href="https://github.com/xyurobert/Tic-Tac-Toe-AI">
-                Tic-Tac-Toe AI <FaArrowRight className='arrow'/>
-              </a>
-            </h4>
-            <h4>
-              <a className='link' target="_blank" rel="noopener noreferrer" href="https://github.com/xyurobert/Sort-Visualizer">
-                Sort Visualizer <FaArrowRight className='arrow'/>
-              </a>
-            </h4>
-            <h4>
-              <a className='link' target="_blank" rel="noopener noreferrer" href="https://github.com/xyurobert/Financial-News-Sentiment-Analyzer">
-                Sentiment Analyzer <FaArrowRight className='arrow'/>
-              </a>
-            </h4>
+            <a className='link' target="_blank" rel="noopener noreferrer" href="https://github.com/xyurobert/moco-hacks">
+              <div className='project-container'>
+                <div className='project-title'>
+                 TweetAway <FaArrowRight className='arrow'/>
+                </div>
+                <p className='project-description'>
+                  Website where users can access and delete any of their twitter posts that are flagged as NSFW or profane.
+                </p>
+                <div className='project-skills'>
+                  Python • HTML • CSS
+                </div>
+              </div>
+            </a>
+            <a className='link' target="_blank" rel="noopener noreferrer" href="https://github.com/xyurobert/Tic-Tac-Toe-AI">
+              <div className='project-container'>
+                <div className='project-title'>
+                  Tic-Tac-Toe AI <FaArrowRight className='arrow'/>
+                </div>
+                <p className='project-description'>
+                  Agent developed off of reinforcement learning algorithms and toolkits.
+                </p>
+                <div className='project-skills'>
+                  Python • OpenAI Gym • Stable Baselines3
+                </div>
+              </div>
+            </a>
+            <a className='link' target="_blank" rel="noopener noreferrer" href="https://xyurobert.github.io/Sort-Visualizer/">
+              <div className='project-container'>
+                <div className='project-title'>
+                  Sort Visualizer <FaArrowRight className='arrow'/>
+                </div>
+                <p className='project-description'>
+                  Website that visualizes different sorting algorithms in the form of bars of different length
+                </p>
+                <div className='project-skills'>
+                  JavaScript • HTML • CSS
+                </div>
+              </div>
+            </a>
+            <a className='link' target="_blank" rel="noopener noreferrer" href="https://github.com/xyurobert/Financial-News-Sentiment-Analyzer">
+              <div className='project-container'>
+                  <div className='project-title'>
+                    Sentiment Analyzer <FaArrowRight className='arrow'/>
+                  </div>
+                  <p className='project-description'>
+                    Program that measures the sentiment of financial news headlines
+                  </p>
+                  <div className='project-skills'>
+                    Python • NLTK
+                </div>
+              </div>
+            </a>          
           </div>
         </div>
 
-        <div className='books-container'>
+        <div className='books-container' ref={booksRef}>
           <h2>Books</h2>
           <li>Shoe Dog - Knight</li>
           <li>Principles - Dalio</li>
@@ -64,7 +148,7 @@ function About() {
           <li>Thinking, Fast and Slow - Kahneman</li>
         </div>
 
-        <div className='music-container'>
+        <div className='music-container' ref={musicRef}>
           <h2>Piano</h2>
           <p>[work in progress]</p>
         </div>
