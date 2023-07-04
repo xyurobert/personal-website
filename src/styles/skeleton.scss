@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=IBM+Plex+Sans:wght@300&family=Nunito:wght@500&display=swap');
 
 body {
   background: #f0ece2;
@@ -84,6 +84,37 @@ li {
   margin-bottom: 10vw;
 }
 
+.piano-container {
+  margin-top: 15px;
+  border: 1px solid rgb(55,55,65);
+  border-radius: 10px;
+}
+
+.piano-current {
+  font-size: 13px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.piano-info {
+  display: flex;
+}
+
+.piano-year {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.thumbnail {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 30%;
+  border-radius: 10px;
+}
+
 .name {
   white-space: nowrap;
   font-size: 37px;
@@ -137,6 +168,38 @@ li {
   .info-container {
     margin-left: 5vw;
     margin-right: 5vw;
-    margin-top: 27vw;
+    margin-top: 20vw;
+  }
+
+  .projects-container {
+    margin-top: 11vw;
+  }
+
+  .books-container {
+    margin-top: 11vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .info-container {
+    margin-top: 30vw;
+  }
+}
+
+@media (max-width: 430px) {
+  .info-container {
+    margin-top: 40vw;
+  }
+
+  .links {
+    font-family: 'IBM Plex Sans', sans-serif; 
+  }
+  
+  .name {
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
   }
 }
