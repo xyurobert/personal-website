@@ -1,0 +1,108 @@
+.sidebar {
+  flex-direction: column;
+  text-align: left;
+  margin-left: 25vw;
+  position: fixed
+}
+
+.socials {
+  margin-top: 4.5vw;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.links button {
+  box-shadow: inset 0 0 0 0 rgb(55,55,64);
+  color: rgb(55,55,64);
+  padding: 0 .15rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  text-decoration: none;
+  border: none;
+  font: inherit;
+  background-color: transparent;
+}
+
+.links button:hover {
+  box-shadow: inset 100px 0 0 0 rgb(55,55,64);
+  color: #f0ece2;
+}
+
+@media (max-width: 900px) {
+  .links button:hover {
+    box-shadow: inset 0 -100px 0 0 rgb(55,55,64);
+    color: #f0ece2;
+  }
+}
+
+.links .current {
+  box-shadow: inset 100px 0 0 0 rgb(55,55,64);
+  color: #f0ece2;
+}
+
+.socials a {
+  color: rgb(55,55,64);
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.socials .linkedin:hover {
+  color: #0072b1;
+  transform: scale(1.2);
+}
+
+.socials .github:hover {
+  color: black;
+  transform: scale(1.2);
+}
+
+.socials .email:hover {
+  color: #DB4437;
+  transform: scale(1.2);
+}
+
+.socials .goodreads:hover {
+  color: #553b08;
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 900px) {
+  .sidebar {
+    flex-direction: column;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f0ece2;
+    border-bottom: 2px solid rgb(55,55,65);
+  }
+
+  .links {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .socials {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 1px;
+  }
+}
+
+@media (max-width: 430px) {
+  .links {
+    font-family: 'IBM Plex Sans', sans-serif; 
+  }
+}

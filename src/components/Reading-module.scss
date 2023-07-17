@@ -1,0 +1,13 @@
+.books-container {
+  margin-top: 5vw;
+}
+
+li {
+  margin-top: 3px;
+}
+
+@media (max-width: 900px) {
+  .books-container {
+    margin-top: 11vw;
+  }
+}

@@ -1,0 +1,35 @@
+.music-container {
+  margin-top: 5vw;
+  margin-bottom: 10vw;
+}
+
+.piano-container {
+  margin-top: 15px;
+  border: 1px solid rgb(55,55,65);
+  border-radius: 10px;
+}
+
+.piano-current {
+  font-size: 13px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.piano-info {
+  display: flex;
+}
+
+.piano-year {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.thumbnail {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  width: 30%;
+  border-radius: 10px;
+}

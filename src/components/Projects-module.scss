@@ -1,0 +1,44 @@
+.projects-container {
+  margin-top: 5vw;
+}
+
+.project-container {
+  margin-top: 15px;
+  border: 1px solid rgb(55,55,65);
+  border-radius: 10px;
+}
+
+.project-title {
+  font-size: 16px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.project-description {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.project-skills {
+  margin-left: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.projects li {
+  margin-top: 1vw
+}
+
+.projects a {
+  color: rgb(55,55,64);
+}
+
+@media (max-width: 900px) {
+  .projects-container {
+    margin-top: 11vw;
+  }
+}

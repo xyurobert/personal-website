@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useLocation } from 'react-router-dom';
-import styles from '../styles/skeleton.scss';
+import styles from './Sidebar-module.scss';
 import links from '../styles/links.scss'
 import { FaLinkedin, FaGithub, FaGoodreads } from "react-icons/fa";
 import { SiGmail } from "react-icons/si"
@@ -13,7 +13,7 @@ function Sidebar({ handleScrollToAbout, handleScrollToProjects, handleScrollToBo
         <a className='name' href="/">Robert Xu</a>
       </h1>
       <div className='links'>
-        <h4 className='link' style={{ margin: '5px 0' }}>
+        <h4 style={{ margin: '5px 0' }}>
           <button onClick={handleScrollToAbout}> about </button>
         </h4>
         <h4 style={{ margin: '5px 0' }}>

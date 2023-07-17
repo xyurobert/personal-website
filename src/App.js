@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, HashRouter, Navigate } from 'react-router-dom';
 import './App.scss';
-import About from './pages/About';
+import Main from './pages/Main';
 import { Helmet } from 'react-helmet';
 
 
@@ -14,7 +14,7 @@ function App() {
       </Helmet>
       <div className="App">
         <Routes>
-          <Route exact path="/" element={<About/>} />
+          <Route exact path="/" element={<Main/>} />
         </Routes>
       </div>
     </HashRouter>
