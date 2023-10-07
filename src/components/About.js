@@ -12,13 +12,13 @@ function About() {
         </p>
         <p>
           Currently, I'm a SWE intern at&nbsp;
-          <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.haylontech.com/'>Haylon Technologies <FaArrowRight className='arrow'/></a> 
-          &nbsp;&nbsp;working backend and&nbsp;
-          <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.ticker.fund/'>Ticker Markets <FaArrowRight className='arrow'/></a> 
-          &nbsp;&nbsp;working frontend. Previously, I was a research intern at UMD, studying the applications of NLP and reinforcement learning.
+          <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.haylontech.com/' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Haylon Technologies <FaArrowRight className='arrow'/></a> 
+          working backend. Previously, I was a SWE Intern at&nbsp;
+          <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.ticker.fund/' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Ticker Markets <FaArrowRight className='arrow'/></a> 
+          &nbsp;&nbsp;working frontend and I was a research intern at UMD, studying the applications of NLP and reinforcement learning.
         </p>
         <p>
-          When I'm not at my computer, you can find me playing the piano, playing tennis with friends, or finding the motivation to go to the gym.
+          When I'm not at my computer, you can find me playing the piano, playing tennis with friends, or enjoying a good read.
         </p>
       </div>
     </div>
