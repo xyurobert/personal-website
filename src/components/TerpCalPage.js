@@ -10,7 +10,7 @@ function TerpCalPage() {
         <p>
           TerpCal is a Chrome extension designed specifically for University of Maryland students 
           to seamlessly sync their Testudo student portal schedules with their Google Calendar. 
-          My aim is to enhance your academic experience by simplifying schedule management.ç
+          My aim is to enhance your academic experience by simplifying schedule management.
         </p>
 
         <a 
