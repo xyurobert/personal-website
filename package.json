@@ -1,5 +1,6 @@
 {
   "name": "personal_website",
+  "homepage": "http://www.robertxu.com/#",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
