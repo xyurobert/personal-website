@@ -1,0 +1,42 @@
+.home-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  color: rgb(55,55,64);
+  border: 2px solid rgb(55, 55, 64);
+  font-size: 14px;
+}
+
+.download-button {
+  display: inline-block;
+  margin: 20px 0;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: rgb(55,55,64); /* Dark color */
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid rgb(55, 55, 64); /* Dark border color */
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.download-button:hover {
+  border-color: rgba(55, 55, 64, 0.6); /* Lighter shade for border on hover */
+  color: rgba(55, 55, 64, 0.6); /* Lighter shade for border on hover */
+
+}
+
+
+.terp-cal-page {
+  text-align: left;
+  padding-left: 20px;
+}
+  
+.terp-cal-title {
+  text-align: center;
+}

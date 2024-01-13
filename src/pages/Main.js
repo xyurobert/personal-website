@@ -1,11 +1,12 @@
 import React, { useRef } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import styles from '../styles/skeleton.scss';
 import Sidebar from '../components/Sidebar'
-import { FaArrowRight } from "react-icons/fa";
 import Projects from '../components/Projects'
 import About from '../components/About'
 import Reading from '../components/Reading'
 import Piano from '../components/Piano'
+import TerpCalPage from '../components/TerpCalPage'; 
 
 function Main() {
   const aboutRef = useRef(null);
@@ -55,31 +56,29 @@ function Main() {
   
     window.scrollTo({ top: y, behavior: 'smooth' });  };
 
-  return (
-    <div className="page-container">
-      <Sidebar 
-        handleScrollToAbout={handleScrollToAbout}
-        handleScrollToProjects={handleScrollToProjects}
-        handleScrollToBooks={handleScrollToBooks}
-        handleScrollToMusic={handleScrollToMusic}
-      />
-      <div className='info-container'>
-
-        <div ref={aboutRef}>
-          <About/>
-        </div>
-        <div ref={projectsRef}>
-          <Projects/>
-        </div>
-        <div ref={booksRef}>
-          <Reading/>
-        </div>
-        <div ref={musicRef}>
-          <Piano/>
+    return (
+      <div className="page-container">
+        <Sidebar 
+          handleScrollToAbout={handleScrollToAbout}
+          handleScrollToProjects={handleScrollToProjects}
+          handleScrollToBooks={handleScrollToBooks}
+          handleScrollToMusic={handleScrollToMusic}
+        />
+        <div className='info-container'>
+          <Routes>
+            <Route path="/terpcal" element={<TerpCalPage />} />
+            <Route path="/" element={
+              <>
+                <div ref={aboutRef}><About /></div>
+                <div ref={projectsRef}><Projects /></div>
+                <div ref={booksRef}><Reading /></div>
+                <div ref={musicRef}><Piano /></div>
+              </>
+            } />
+          </Routes>
         </div>
       </div>
-    </div>
-  );
+    );
 }
 
 export default Main;

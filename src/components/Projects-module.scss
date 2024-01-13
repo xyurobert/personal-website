@@ -29,6 +29,18 @@
   margin-bottom: 10px;
 }
 
+.project-date {
+  margin-right: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.project-data {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
 .projects li {
   margin-top: 1vw
 }
