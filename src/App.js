@@ -2,7 +2,8 @@ import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Main from './pages/Main';
-import TerpCalPage from './components/TerpCalPage.js'; // Adjust the import path as necessary
+import TerpCalPage from './components/TerpCalPage.js';
+import TerpCalPolicy from './components/TerpCalPolicy.js'
 import { Helmet } from 'react-helmet';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Main />} />
           <Route path="/terpcal" element={<TerpCalPage />} />
+          <Route path="/terpcal/policy" element={<TerpCalPolicy />} />
         </Routes>
       </div>
     </HashRouter>

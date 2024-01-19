@@ -40,7 +40,7 @@ function TerpCalPage() {
 
         <h2>Privacy Policy</h2>
         <p>
-          For more detailed information on our data handling practices, please visit our <a href="https://docs.google.com/document/d/1AKOkrzM5CsBOUwYLyzK5w6xPbMmSNS0ST7vcymf2CgY/edit?usp=sharing" target="_blank">Privacy Policy</a> page.
+          For more detailed information on our data handling practices, please visit our <Link to="/terpcal/policy">Privacy Policy</Link> page.
         </p>
 
         <h2>Contact Us</h2>
