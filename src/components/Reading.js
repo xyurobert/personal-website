@@ -9,6 +9,8 @@ function Reading() {
       <li>Shoe Dog - Knight</li>
       <li>Principles - Dalio</li>
       <li>Why We Sleep - Walker</li>
+      <li>Zero to One - Thiel</li>
+      <li>Flash Boys - Lewis</li>
       <li>Sapiens - Harari</li>
       <li>Outliers - Gladwell</li>
       <li>The Power of Habit - Duhigg</li>

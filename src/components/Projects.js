@@ -10,6 +10,24 @@ function Projects() {
     <div className='projects-container' >
     <h2>Projects</h2>
     <div className='projects'>
+      <a className='link' target="_blank" rel="noopener noreferrer" href="https://devpost.com/software/polygone">
+        <div className='project-container'>
+          <div className='project-title'>
+            PolyGone <FaArrowRight className='arrow'/>
+          </div>
+          <p className='project-description'>
+            Geolocation tracking app for real-time monitoring of target devices and direct them back to you. Won best Social Good Hack at Bitcamp 2024
+          </p>
+          <div className='project-data'>
+            <div className='project-skills'>
+              React/React Native • HTML • CSS • Google Maps API
+            </div>
+            <div className='project-date'>
+              Apr 2024
+            </div>
+          </div>
+        </div>
+      </a> 
       <Link to="/terpcal" className='link'>
         <div className='project-container'>
           <div className='project-title'>
