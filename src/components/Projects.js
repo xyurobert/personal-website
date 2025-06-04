@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import styles from "./Projects-module.scss"
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
@@ -10,6 +9,24 @@ function Projects() {
     <div className='projects-container' >
     <h2>Projects</h2>
     <div className='projects'>
+    <a className='link' target="_blank" rel="noopener noreferrer" href="https://devpost.com/software/silk-6nhgiy">
+        <div className='project-container'>
+          <div className='project-title'>
+            Silk <FaArrowRight className='arrow'/>
+          </div>
+          <p className='project-description'>
+            Google Gemini-powered platform that finds cheaper international prices for products and connects buyers with travelers to facilitate smart, cost-saving purchases.          
+          </p>
+          <div className='project-data'>
+            <div className='project-skills'>
+              Gemini API, Supabase, Express.js, React
+            </div>
+            <div className='project-date'>
+              Apr 2025
+            </div>
+          </div>
+        </div>
+      </a> 
       <a className='link' target="_blank" rel="noopener noreferrer" href="https://devpost.com/software/polygone">
         <div className='project-container'>
           <div className='project-title'>
@@ -45,29 +62,11 @@ function Projects() {
             </div>
           </div>
         </div>
-      </Link>
-      <a className='link' target="_blank" rel="noopener noreferrer" href="https://xyurobert.github.io/Sort-Visualizer/">
-        <div className='project-container'>
-          <div className='project-title'>
-            Sort Visualizer <FaArrowRight className='arrow'/>
-          </div>
-          <p className='project-description'>
-            Website that visualizes different sorting algorithms in the form of bars of different length
-          </p>
-          <div className='project-data'>
-            <div className='project-skills'>
-              JavaScript • HTML • CSS
-            </div>
-            <div className='project-date'>
-              Feb 2023
-            </div>
-          </div>
-        </div>
-      </a>   
+      </Link>  
       <a className='link' target="_blank" rel="noopener noreferrer" href="https://github.com/xyurobert/Tic-Tac-Toe-AI">
         <div className='project-container'>
           <div className='project-title'>
-            Tic-Tac-Toe AI <FaArrowRight className='arrow'/>
+            RL Tic-Tac-Toe Agent <FaArrowRight className='arrow'/>
           </div>
           <p className='project-description'>
             Agent developed off of reinforcement learning algorithms and toolkits.
@@ -85,7 +84,7 @@ function Projects() {
       <a className='link' target="_blank" rel="noopener noreferrer" href="https://github.com/xyurobert/Financial-News-Sentiment-Analyzer">
         <div className='project-container'>
             <div className='project-title'>
-              Sentiment Analyzer <FaArrowRight className='arrow'/>
+              Financial News Sentiment Analyzer <FaArrowRight className='arrow'/>
             </div>
             <p className='project-description'>
               Program that measures the sentiment of financial news headlines

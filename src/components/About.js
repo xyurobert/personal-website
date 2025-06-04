@@ -8,7 +8,7 @@ function About() {
       <h2 className='hi'>Hello!</h2>
       <div className='about'>
         <p>
-          I'm a CS + Math major @ University of Maryland, College Park. I love building things and expanding my knowledge wherever I go. 
+          I'm a CS + Math major, Comp Finance Minor @ University of Maryland, College Park. I love building things and expanding my knowledge wherever I go. 
         </p>
         <p>
           Currently, I'm a SWE Intern at&nbsp;
