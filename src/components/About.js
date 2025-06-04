@@ -11,7 +11,9 @@ function About() {
           I'm a CS + Math major @ University of Maryland, College Park. I love building things and expanding my knowledge wherever I go. 
         </p>
         <p>
-          Currently, I'm a venture scout at&nbsp;
+          Currently, I'm a SWE Intern at&nbsp;
+          <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.coinbase.com/' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Coinbase <FaArrowRight className='arrow'/></a> 
+          &nbsp;working on Payments infrastructure and a venture scout at&nbsp;
           <a className='link' target="_blank" rel="noopener noreferrer" href='https://somacap.com/' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Soma Capital <FaArrowRight className='arrow'/></a> 
           &nbsp;. Previously, I was a SDE Intern at Amazon working on full-stack tooling for Alexa, a SWE intern at&nbsp;
            <a className='link' target="_blank" rel="noopener noreferrer" href='https://www.haylontech.com/' style={{fontWeight: 'bold', textDecoration: 'underline'}}>Haylon Technologies <FaArrowRight className='arrow'/></a> 
